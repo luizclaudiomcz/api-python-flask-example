@@ -54,9 +54,35 @@ $ python app.py
  
    `id=[integer]`
 
-* **Data Params**
+* **Example**
 
-  None
+/fichas/1
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ id : 1, status : "Solicitado", solicitante: ... }`
+                
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{'error': 'not found'}`
+    
+ **Mostrar todas as Fichas**
+----
+  Retorna json com dados de todas as fichas.
+
+* **URL**
+
+  /fichas/
+
+* **Method:**
+
+  `GET`
+  
+* **Example**
+
+/fichas/
 
 * **Success Response:**
 
@@ -68,20 +94,66 @@ $ python app.py
   * **Code:** 404 NOT FOUND <br />
     **Content:** `{'error': 'not found'}`
 
-  OR
+ **Mostrar as Fichas de uma determinada unidade (descrição da unidade)**
+----
+  Retorna json com dados das fichas de uma unidade.
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+* **URL**
 
-* **Sample Call:**
+  /fichas/:unidade
 
-  ```javascript
-    $.ajax({
-      url: "/fichas/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `solicitante.unidade.descricao=[string]`
+
+* **Example**
+
+/fichas/Centro%20de%20Educação
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ id : 1, status : "Solicitado", solicitante: ... }`
+                
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{'error': 'not found'}`
+
+ **Inserir uma Ficha**
+----
+  Insere uma ficha catalográfica.
+
+* **URL**
+
+  /fichas/:unidade
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   Todos os campos
+
+* **Example**
+
+/fichas/Centro%20de%20Educação
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ id : 1, status : "Solicitado", solicitante: ... }`
+                
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{'error': 'not found'}`
