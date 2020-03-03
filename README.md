@@ -10,12 +10,12 @@ API com serviços para administração de solicitações de "Fichas Catalográfi
 
 # instalação
 **1. Instalar o virtualenv para começar o projeto** 
- $ pip install virtualenv
+*$ pip install virtualenv
 
 **2. Ir para o diretório do projeto**
 
 **3. Incluir as dependências do Flask**
- $ virtualenv .venv
+*$ virtualenv .venv
 
 **4. Ativar o virtualenv**
 
