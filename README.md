@@ -56,7 +56,7 @@ API com serviços para administração de solicitações de "Fichas Catalográfi
 
 * **Example**
 
-/fichas/1
+  /fichas/1
 
 * **Success Response:**
 
@@ -82,7 +82,7 @@ API com serviços para administração de solicitações de "Fichas Catalográfi
   
 * **Example**
 
-/fichas/
+  /fichas/
 
 * **Success Response:**
 
@@ -146,7 +146,7 @@ API com serviços para administração de solicitações de "Fichas Catalográfi
 
 * **Example**
 
-/fichas/Centro%20de%20Educação
+  /fichas/Centro%20de%20Educação
 
 * **Success Response:**
 
