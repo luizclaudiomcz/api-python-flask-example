@@ -9,15 +9,15 @@ API com serviços para administração de solicitações de "Fichas Catalográfi
 2. Flask >= 1.1.1
 
 # instalação
-### 1. Instalar o virtualenv para começar o projeto 
+**1. Instalar o virtualenv para começar o projeto** 
 $ pip install virtualenv
 
-### 2. Ir para o diretório do projeto
+**2. Ir para o diretório do projeto**
 
-### 3. Incluir as dependências do Flask
+**3. Incluir as dependências do Flask**
 $ virtualenv .venv
 
-### 4. Ativar o virtualenv
+**4. Ativar o virtualenv**
 
 No Linux
 $ source .venv/bin/activate
@@ -25,20 +25,20 @@ $ source .venv/bin/activate
 No Windows
 Executar o arquivo .venv\Scripts\activate.bat
 
-### 5. Instalar o Flask
+**5. Instalar o Flask**
 $ pip install flask
 
-### 6. Criar um arquivo chamado "requirements.txt" com o conteúdo abaixo:
+**6. Criar um arquivo chamado "requirements.txt" com o conteúdo abaixo:**
 flask==1.1.1
 
-### 7. Basta executar o rodar o arquivo "app.py" e consumir os serviços da api:
+**7. Basta executar o rodar o arquivo "app.py" e consumir os serviços da api:**
 $ python app.py
 
 # documentação da api
 
 **Mostrar Ficha**
 ----
-  Retorna json com uma ficha.
+  Retorna json com dados de uma ficha.
 
 * **URL**
 
